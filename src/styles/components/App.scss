@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+figure img {
+  width: 100%;
+}
