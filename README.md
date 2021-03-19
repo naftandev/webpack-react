@@ -9,3 +9,9 @@ cd webpack-react
 npm i
 npm start
 ```
+
+### Build project
+
+```
+npm run build
+```
