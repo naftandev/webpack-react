@@ -15,3 +15,21 @@ npm start
 ```
 npm run build
 ```
+
+### Loaders and plugins installed
+
+- webpack
+- webpack-cli
+- webpack-dev-server
+- @babel/core
+- @babel/preset-env
+- @babel/preset-react
+- babel-loader
+- css-loader
+- css-minimizer-webpack-plugin
+- mini-css-extract-plugin
+- sass
+- sass-loader
+- html-loader
+- html-webpack-plugin
+- clean-webpack-plugin

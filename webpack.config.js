@@ -10,8 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: './js/[name].[contenthash].js',
-    assetModuleFilename: './[contenthash][ext][query]',
+    filename: 'js/[name].[contenthash].js',
+    assetModuleFilename: '[contenthash][ext][query]',
   },
   mode: 'production',
   resolve: {
@@ -27,31 +27,31 @@ module.exports = {
         },
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.html$/i,
         use: {
           loader: 'html-loader',
         },
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-      },
-      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: './assets/statics/[contenthash][ext][query]',
+          filename: 'assets/statics/[contenthash][ext][query]',
         },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: './index.html',
+      template: 'public/index.html',
+      filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: './css/[name].[contenthash].css',
+      filename: 'css/[name].[contenthash].css',
     }),
     new CleanWebpackPlugin(),
   ],
