@@ -31,3 +31,5 @@ npm run build
 - html-loader
 - html-webpack-plugin
 - clean-webpack-plugin
+
+#### _Any feedback is welcome_
